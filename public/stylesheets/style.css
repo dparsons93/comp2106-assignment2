@@ -11,3 +11,18 @@ p {
     color: rgba(0,0,0,0.71);
     padding: 0;
 }
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  main .container {
+  	padding-top: 100px;
+  	padding-bottom: 100px;
+  }

@@ -12,6 +12,7 @@ var session = require('express-session');
 var flash = require('connect-flash');
 var localStrategy = require('passport-local').Strategy;
 
+var routes = require('./routes/index');
 var restaurants = require('./routes/restaurants');
 var auth = require('./routes/auth');
 
@@ -50,6 +51,7 @@ passport.use(Account.createStrategy());
 passport.serializeUser(Account.serializeUser);
 passport.deserializeUser(Account.deserializeUser);
 
+app.use('/', routes);
 app.use('/restaurants', restaurants);
 app.use('/auth', auth);
 
