@@ -1,0 +1,13 @@
+.title {
+	font-size: 1.3em !important;
+}
+
+h3 {
+    color: #ee6e73;
+    font-weight: 300 !important;
+}
+
+p {
+    color: rgba(0,0,0,0.71);
+    padding: 0;
+}

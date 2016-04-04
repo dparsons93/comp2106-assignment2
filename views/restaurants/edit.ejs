@@ -1,0 +1,71 @@
+<%- include ../partials/header.ejs %>
+
+<main class="container">
+    <div class="container">
+        <h3>Restaurant Details</h3>
+        <div class="row">   
+            <form class="col s12" method="post" action="<%= restaurant._id %>">
+            
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="name" id="name" type="text" required value="<%= restaurant.name %>">
+                        <label for="name">Name</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="type" id="type" type="text" required value="<%= restaurant.type %>">
+                        <label for="type">Type</label>
+                    </div>
+                </div>
+                
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="owner" id="owner" type="text" required value="<%= restaurant.owner %>">
+                        <label for="owner">Owner</label>
+                    </div>
+                </div>
+                
+
+                <div class="row"> 
+                    <div class="input-field col s12">
+                        <input name="phoneNumber" type="text" id="phoneNumber" required value="<%= restaurant.phoneNumber %>">
+                        <label for="phoneNumber">Phone Number</label>
+                    </div>
+                </div>
+                
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="address" type="text" id="address" required value="<%= restaurant.address %>">
+                        <label for="address">Address</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="file-field input-field col s12">
+                      <div class="btn">
+                        <span>File</span>
+                        <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                    </div>
+                    </div>
+                </div>
+                
+                <button class="waves-effect waves-light btn">Save</button>
+                
+                <a href="/restaurants/delete/<%= restaurant._id %>" title="Delete">
+                    <button class="waves-effect waves-light btn" type="button">Delete</button>
+                </a>
+
+            </form>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

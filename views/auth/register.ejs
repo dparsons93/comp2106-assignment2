@@ -1,0 +1,33 @@
+<%- include ../partials/header.ejs %>
+
+<main class="container">
+    <div class="container">
+        <h3>Register</h3>
+        <div class="row">
+            <form class="col s12" method="post" action="/auth/register">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="username" name="username" id="username" type="text" required>
+                        <label for="username">Username</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" name="password" id="password" type="password" required>
+                        <label for="password">Password</label>   
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="confirm" id="confirm" type="password" required>
+                        <label for="confirm">Confirm</label>
+                    </div>
+                </div>
+                
+                <button class="waves-effect waves-light btn">Register</button>
+                <p>Already have an account?  <a href="/auth/login" title="Login">Login</a></p>
+            </form>
+        </div>
+    </div>
+</main>

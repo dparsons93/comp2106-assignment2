@@ -1,0 +1,67 @@
+<%- include ../partials/header.ejs %>
+
+<main class="container">
+    <div class="container">
+        <h3>Add Restaurant</h3>
+        <div class="row">
+            <form class="col s12" method="post" action="add">
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="name" id="name" type="text" required />
+                        <label for="name">Name</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="type" id="type" type="text" required />
+                        <label for="type">Type</label>
+                    </div>
+                </div>
+                
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="owner" id="owner" type="text" required />
+                        <label for="owner">Owner</label>
+                    </div>
+                </div>
+                
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="phoneNumber" id="phoneNumber" type="text" required />
+                        <label for="phoneNumber">Phone Number</label>
+                    </div>
+                </div>
+                
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="address" id="address" type="text" required />
+                        <label for="address">Address</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="file-field input-field col s12">
+                      <div class="btn">
+                        <span>File</span>
+                        <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                    </div>
+                    </div>
+                </div>
+
+                <button class="waves-effect waves-light btn">Save</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+
+</body>
+</html>
